@@ -20,6 +20,7 @@ function App() {
         height: '90vh',
       }}
     >
+      hello
       <Title style={{ textAlign: 'center' }}>TODO APP with REDUX</Title>
       <Filters />
       <Divider />
