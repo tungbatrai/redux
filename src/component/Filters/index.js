@@ -19,8 +19,8 @@ export default function Filters() {
         >
           Filter By Status
         </Typography.Paragraph>
-        <Radio.Group>
-          <Radio value='All'>All</Radio>
+        <Radio.Group >
+          <Radio value='All' >All</Radio>
           <Radio value='Completed'>Completed</Radio>
           <Radio value='Todo'>To do</Radio>
         </Radio.Group>

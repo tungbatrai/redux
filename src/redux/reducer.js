@@ -1,4 +1,4 @@
-import store from "./store";
+// import store from "./store";
 
 const initState = {
     filters: {
@@ -26,13 +26,15 @@ const rootReducer = (state = initState , action ) => {
         playload: {id : 5,name : 'learn',completed :false , priority :'medium'}
     }
      */
+    console.log({state,action})
     switch(action.type) {
         case 'todoList/addTodo': 
         return {
             ...state, 
             todoList: [
                 ...state.todoList,
-                {id : 5,name : 'learn',completed :false , priority :'medium'}
+                // {id : 5,name : 'learn',completed :false , priority :'medium'}
+                action.playload
             ]
         }
         default:
