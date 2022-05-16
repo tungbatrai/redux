@@ -4,11 +4,25 @@ import "./App.css";
 import Filters from "./component/Filters";
 import TodoList from "./component/TodoList";
 import { Typography, Divider } from "antd";
-import 'antd/dist/antd.css';
+import "antd/dist/antd.css";
+import React, { useEffect, useState } from "react";
 const { Title } = Typography;
 function App() {
+  /*const test = (a) => (b) => {
+    return a + b;
+  };*/
+  // const test = (a, b) => {
+  //   return a + b;
+  // };
+  // const handleclick = () => {
+  //   //console.log(test(1)(2));
+  //   console.log(test(1, 2));
+  // };
   return (
     <div className="App">
+      {/* <div onClick={()=> handleclick()}>
+        <button>click</button>
+      </div> */}
       <div
         style={{
           width: 500,
