@@ -10,7 +10,7 @@ export default function Filters() {
   const dispatch = useDispatch();
   const [searchText, setSearchText] = useState("");
   const handleSearchTextChange = (e) => {
-    console.log('handlesearch',e.target.value)
+    // console.log('handlesearch',e.target.value)
     setSearchText(e.target.value)
     dispatch(searchFilterChange(e.target.value))
   };

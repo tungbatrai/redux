@@ -15,7 +15,7 @@ export default function TodoList() {
   //const todoList = useSelector((state)=> state.todoList)
   const todoList = useSelector(todoListSelector);
   const searchText = useSelector(searchTextSelector) 
-  console.log(todoList);
+ // console.log(todoList);
   const handleadd = () => {
     dispatch(
       addTodo({
@@ -28,7 +28,7 @@ export default function TodoList() {
     setTodoName('')
     setPriority('Medium')
   }; 
-  console.log("searchText",searchText);
+  // console.log("searchText",searchText);
   const handleInputChange = (e) => {
    
     setTodoName(e.target.value);

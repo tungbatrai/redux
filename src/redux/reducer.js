@@ -4,7 +4,7 @@
 
 const initState = {
   filters: {
-    search: "",
+    search: '',
     status: "All",
     priority: [],
   },
@@ -36,7 +36,7 @@ const rootReducer = (state = initState, action) => {
         playload: {id : 5,name : 'learn',completed :false , priority :'medium'}
     }
      */
-  console.log({ state, action });
+  // console.log({ state, action });
   switch (action.type) {
     case "todoList/addTodo":
       return {
@@ -50,8 +50,11 @@ const rootReducer = (state = initState, action) => {
     case "filters/searchFilterChange":
       return {
           ...state,
-          ...state.filters, 
-          search : action.playload, 
+          filters : {
+            ...state.filters, 
+            search : action.playload, 
+          }
+        
       };
     default:
       return state;

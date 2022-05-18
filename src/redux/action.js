@@ -14,9 +14,9 @@ export const addTodo = (data) => {
   };
 };
 
-export const  searchFilterChange =(text) => {
-    return {
-        type:"filters/searchFilterChange",
-        playload : text
-    }
-}
+export const searchFilterChange = (text) => {
+  return {
+    type: "filters/searchFilterChange",
+    playload: text,
+  };
+};
